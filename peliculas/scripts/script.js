@@ -46,6 +46,7 @@ form.addEventListener('submit', function AlmacenarLocalStorage(){
         localStorage.setItem('Email',email);
         localStorage.setItem('Género',gender);
         localStorage.setItem('Mensaje',msm);
+        
         ObtenerLocalStorage();
     }
 })
@@ -56,7 +57,8 @@ function ObtenerLocalStorage(){
     let email = localStorage.getItem('Email');
     let genero = localStorage.getItem('Género');
     let mensaje = localStorage.getItem('Mensaje');
-    alert(`La información almacenada es ${nombre}
+    alert(`La información almacenada es 
+    ${nombre}
     ${email}
     ${genero}
     ${mensaje}`);

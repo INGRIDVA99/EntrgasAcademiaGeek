@@ -10,10 +10,11 @@ function clickBtncalcular(){
     var pesos = txtpesos.value;
 
     var txtdolar = document.getElementById("txtdolar");
-    var dolar = 3.827;
+    var euro = 4.501;
 
 
-    var CU = pesos / dolar;
+    var CU = pesos / euro;
 
-    alert(CU)
+    //alert(CU)
+    document.getElementById("resultado").innerHTML = CU;
 }
